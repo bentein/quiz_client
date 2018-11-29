@@ -1,10 +1,24 @@
-﻿.registerScreen {
+﻿
+body {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.registerScreen {
   display: flex;
+  flex-direction: column;
   height: 100%;
   min-height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.headerText { 
+  display: flex;
+  margin-bottom: 0.4em;
+  font-size: 4em;
+  text-align: center;
+  color: white;
 }
 
 .registerForm {
@@ -20,3 +34,45 @@
   align-items: center;
 }
 
+.displayNameField {
+  height: 3em;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.2em;
+  color: gainsboro;
+}
+
+.chooseDifficulty {
+  text-align: center;
+  color: white;
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+.buttonEasy, .buttonMedium, .buttonHard  {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  height: 3em;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+}
+
+.buttonEasy {
+  background-color: #e8ffe5;
+}
+
+.buttonMedium {
+  background-color: #fffee5;
+}
+
+.buttonHard {
+  background-color: #f9e1de;
+}

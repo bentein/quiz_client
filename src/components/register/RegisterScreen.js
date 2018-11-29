@@ -26,23 +26,20 @@ class RegisterScreen extends React.Component {
   render() {
     return (
       <div className="registerScreen">
-        <form onSubmit={this.registerContender} className="registerForm">
-          <label className="displayNameLabel">
-            <input type="text" className="displayNameField" placeholder="Your Nickname" value={this.state.displayName} onChange={this.handleChange} />
-          </label>
-          <div className="difficultySection">
-            <ButtonGroup>
-              <Button bsStyle="success">Eazy</Button>
-              <Button bsStyle="warning" checked>Medium</Button>
-              <Button bsStyle="danger">Hard</Button>
-            </ButtonGroup>
-          </div>
-          <Button type="submit" className="submitButton">Start</Button>
-        </form>
-        
+      <a className="headerText">Code Quiz</a>
+      <form onSubmit={this.registerContender} className="registerForm">
+        <label className="displayNameLabel">
+          <input type="text" className="displayNameField" placeholder="Enter Nickname" value={this.state.displayName} onChange={this.handleChange} />
+        </label>
+        <a className="chooseDifficulty">Choose how difficult you want the quiz to be!</a>
+        <div className="difficultySection">
+          <Button type="submit" className="buttonEasy">EASY</Button>
+          <Button type="submit" className="buttonMedium">MEDIUM</Button>
+          <Button type="submit" className="buttonHard">HARD</Button>
+        </div>
+      </form>
       </div>
     )
-
   }
 }
 export default RegisterScreen;
